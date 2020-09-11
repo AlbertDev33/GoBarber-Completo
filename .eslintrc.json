@@ -28,12 +28,23 @@
     "import/no-duplicates": "off",
     "@typescript-eslint/no-unused-vars": ["error", {
       "argsIgnorePattern": "_"
-    }],
+      }],
      "import/extensions": [
       "error",
       "ignorePackages",
       {
         "ts": "never"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
       }
     ]
   },
